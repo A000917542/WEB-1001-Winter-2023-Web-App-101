@@ -1,0 +1,35 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+:root {
+    --head-height: 3rem;
+    --body-height: calc(50% - var(--head-height, 1rem));
+}
+
+html {
+    font-size: 1rem;
+}
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+header {
+    height: var(--head-height, 1rem);
+}
+
+main {
+    min-height: var(--body-height, 100%);
+}

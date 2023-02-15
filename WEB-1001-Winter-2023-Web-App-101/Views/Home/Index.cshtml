@@ -1,0 +1,17 @@
+﻿@model BlogPost
+@{
+    ViewData["Title"] = Model.Title;
+    ViewData["Description"] = Model.Description;
+    Layout = "_Layout2";
+}
+
+<article>
+    <header>
+        <partial name="BlogAuthorInfoPartial" data="@Model" />
+    </header>
+</article>
+
+@*@section Sidebar
+{
+    <h2>This is the sidebar!</h2>
+}*@

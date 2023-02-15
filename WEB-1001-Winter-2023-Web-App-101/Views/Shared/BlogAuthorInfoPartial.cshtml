@@ -1,0 +1,18 @@
+﻿@model BlogPost
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+     var minRead = Math.Max(Math.Floor(@Model.Content.Split(' ').Count() / 250.0d), 1);
+
+}
+
+<section>
+    <img src="@Model.Author?.Photo?.ToString()" alt="Author" />
+    <span><a href="mailto:@Model.Author?.Email">@Model.Author?.FullName</a></span>
+    <ul>
+        <li><time datetime="@Model.PublishDate">@Model.PublishDate.ToString("MMMM dd")</time>
+        <li><span>@minRead Mins.</span>
+        <li><input type="button" value="Listen" />
+    </ul>
+</section>
