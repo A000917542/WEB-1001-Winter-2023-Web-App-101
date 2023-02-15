@@ -5,7 +5,7 @@
 
 document.querySelector('input[type=button]').addEventListener('click', () => {
     const synth = window.speechSynthesis;
-    let text = document.querySelector('span').innerText;
+    let text = document.querySelector('#Blog-Post-Content').innerText;
     let voice = synth.getVoices()[2]
     const utterThis = new SpeechSynthesisUtterance(text);
     utterThis.voice = voice;

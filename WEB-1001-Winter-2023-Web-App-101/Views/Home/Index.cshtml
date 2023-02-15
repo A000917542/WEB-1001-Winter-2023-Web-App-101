@@ -5,11 +5,11 @@
     Layout = "_Layout2";
 }
 
-<article>
-    <header>
-        <partial name="BlogAuthorInfoPartial" data="@Model" />
-    </header>
-</article>
+<span class="blog-post-tag">Test Tag 1</span>
+
+<partial name="_BlogPostPartial" data="@Model" />
+
+<span class="blog-post-tag">Test Tag 2</span>
 
 @*@section Sidebar
 {

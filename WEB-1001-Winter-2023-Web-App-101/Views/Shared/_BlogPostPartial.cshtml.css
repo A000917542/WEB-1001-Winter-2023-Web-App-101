@@ -1,0 +1,10 @@
+﻿article {
+    margin: 1rem;
+}
+
+.blog-post-tag {
+    margin: 0.25rem;
+    padding: 0 0.5rem;
+    border-radius: 25%;
+    background-color: paleturquoise;
+}

@@ -26,9 +26,9 @@ img {
     object-fit: contain;
 }
 
-header {
+/*header {
     height: var(--head-height, 1rem);
-}
+}*/
 
 main {
     min-height: var(--body-height, 100%);
