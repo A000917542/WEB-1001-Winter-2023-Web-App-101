@@ -22,6 +22,25 @@ namespace WEB_1001_Winter_2023_Web_App_101.Controllers
             return View(post);
         }
 
+        public IActionResult CreateAuthor(Author author)
+        {
+
+            if(ModelState.IsValid)
+            {
+                if (author is null)
+                {
+                    author = new Author();
+                }
+
+                var x = Request.Query;
+
+                
+            }
+
+            return View(author);
+
+        }
+
         public IActionResult Privacy()
         {
             return View();
